@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+		<script src="./sketch-tilt_fill.js"></script>
+		<style> body {padding: 10px; margin: 10px; width: 800px;} </style>
+	</head>
+	<body>
+
+		<h1>Tilt Fill: Filling polyominoes with as many particles as possible</h1>
+		<p>
+		In the context of e.g. Tilt Map you might be interested in how to insert as many particles as possible.
+		Assume you have an entry point with an arbitrary amount of particles and now want to fill the polyomino as much as possible.
+		As an additional complication assume that you do not have a precise force that allows single field movements but only maximal movements, i.e., fields always move into the corresponding direction until they hit an obstacle.
+		You can easily find examples that cannot be filled completely but how much can you fill a connected polyomino always at least?
+		We assume that this lower bound is 50% but currently we do neither have a proof nor a promising algorithmic strategy except for some special cases.
+		</p>
+
+		<p>
+		You can play around with the example below:
+		</p>
+		<p>
+		<div id="sketch-holder-tilt-fill">
+		</div>
+		<button onclick="tiltFillSketch.reset(tiltFillSketchP5)">Reset</button> Click <a href="./sketch-tilt_fill.js">here</a> for the source code.
+		</p>
+
+	</body>
+</html>

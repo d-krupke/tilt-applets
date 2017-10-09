@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+		<script src="./sketch-tilt_gather.js"></script>
+		<style> body {padding: 10px; margin: 10px; width: 800px;} </style>
+	</head>
+	<body>
+	
+		<h1>Tilt Gather: Moving the particles in a polyomino onto the same field</h1>
+		<p>
+		After the particles/robots have successfully completed the mission, you want to gather all particles.
+		If the polyomino is connected at there is at least one wall, one can show that this is always possible if we are able to make precise one field movements and particles are allowed to overlap.
+		</p>
+		<p>
+		<div id="sketch-holder-tilt-gather">
+		</div>
+		<button onclick="tiltGatherSketch.reset(tiltGatherSketchP5)">Reset</button> Click <a href="./sketch-tilt_gather.js">here</a> for the source code.
+		</p>
+		<h3>Publications</h3>
+		<ul>
+			<li>
+				A.V. Mahadev, D. Krupke, J.-M. Reinhardt, S.P. Fekete, A.T. Becker
+				<strong> Collecting a Swarm in a 2D Environment Using Shared, Global Inputs.  </strong>
+				In: <a href="http://case2016.org">13th Conference on Automation Science and Engineering (CASE 2016)</a>, 1231-1236.
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+		<script src="./sketch-tilt_asm.js"></script>
+		<style> body {padding: 10px; margin: 10px; width: 800px;} </style>
+	</head>
+	<body>
+		<h1>Tilt Assembly: Building polyominoes</h1>
+		<p>
+		In this problem you have given a polyomino and you have to build it by only inserting tiles from north, south, east, or west.
+		The first tile you can place anywhere but all other placement are not allowed to touch any other tile while being inserted.
+		The general idea is that the tiles stick to each other as soon as they touch.
+		They get inserted by being shot from outside via magnetic fields.
+		</p>
+		<p>
+		You can play around with the example below:
+		</p>
+		<div id="sketch-holder-tilt-asm">
+			<!-- Our sketch will go here! -->
+		</div>
+		<p>
+		<button onclick="tiltAssemblySketch.resetPolyomino(tiltAssemblySketchP5)">Reset</button> 
+		<button onclick="tiltAssemblySketch.undoTile(tiltAssemblySketchP5)">Undo</button> 
+		Click <a href="./sketch-tilt_asm.js">here</a> for the source code.
+		</p>
+		<p>
+		Obviously, not all polyominoes can be built on this way but we can efficiently check for constructability for hole-free polyominoes.
+		For polyominoes with holes we are currently not sure about the hardness.
+		For 3-dimensional polyominoes we can show NP-hardness.
+		</p>
+		<h3>Publications</h3>
+
+		<ul>
+			<li>A.T. Becker, S.P. Fekete, P. Keldenich, D. Krupke, C. Rieck, C. Scheffer, and A. Schmidt.
+				<strong>Tilt Assembly: Algorithms for Micro-Factories that Build Objects with Uniform External Forces.</strong>
+				To appear in: <a href="http://aiat.in.th/isaac2017/">28th International Symposium on Algorithms and Computation (ISAAC)</a>.</li>
+		</ul>
+	</body>
+</html>

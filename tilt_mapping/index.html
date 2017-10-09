@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+		<script src="./sketch-tilt_map.js"></script>
+		<style> body {padding: 10px; margin: 10px; width: 800px;} </style>
+	</head>
+	<body>
+
+
+		<h1>Tilt Map: Mapping/Exploring an unknown polyomino</h1>
+
+		<p>		<a href="https://en.wikipedia.org/wiki/Magnetic_resonance_imaging">Magnetic resonance imaging</a> sometimes produces images with too low contrast.
+		For such cases there are contrast agents but they diffuse quickly and some are even toxic.
+		Another approach could be map the tissue using a swarm of particles controlled by a magnetic field.
+		These particles have a high contrast and can be used to identify the tissue boundaries.
+		A boundary is identified if a particle collides with it and thus stops moving despite the magnetic force.
+		</p>
+		<p>
+		The continues 3-dimensional case is of course extremely complicated so let us stick with a simplified 2-dimensional variant where particles move in a grid.
+		In this problem you are given an initially unknown polyomino and a set of particles within it.
+		You have to explore/map the whole polyomino with as few moves as possible.
+		A move shifts all particles one field into the same direction (if a particle is blocked, it does not move).
+		</p>
+
+		<p>
+		Use the following interactive visualization to get an intuition of the problem.
+		Click with the mouse in the direction you want to shift the particles (red circles).
+		</p>
+
+		<p>
+		<div id="sketch-holder-tilt-map">
+		</div>
+		<button onclick="tiltMapSketch.reset(tiltMapSketchP5)">Reset</button>
+		Click <a href="./sketch-tilt_map.js">here</a> for the source code.
+		</p>
+
+		<h3>Publications</h3>
+		<ul>
+			<li>A.V. Mahadev, D. Krupke, S.P. Fekete, A.T. Becker
+				<strong> Mapping, Foraging, and Coverage with a Particle Swarm Controlled by Uniform Inputs </strong>
+				To appear in <a href="http://www.iros2017.org">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2017).</a></li>
+		</ul>
+	</body>
+</html>
